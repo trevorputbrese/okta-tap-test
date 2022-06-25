@@ -1,0 +1,14 @@
+---
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: okta-flask-test
+spec:
+  routes:
+  - services:
+    - name: okta-cluster-ip-svc
+      port: 8080
+  virtualhost:
+    fqdn: okta-flask-test.tapfordevs.com
+    tls:
+      secretName: default/tls-tkgharbor-secret 
