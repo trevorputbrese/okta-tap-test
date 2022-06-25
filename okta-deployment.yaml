@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: okta-tap-test
-        image: registry.tkgharbor.com/okta-test/okta-python-test:v2
+        image: registry.tkgharbor.com/okta-test/okta-python-test:v3
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
