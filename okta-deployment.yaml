@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okta-tap-test
+  name: okta-tap-test-deployment
   labels:
     name: okta-tap-test
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: okta-tap-test
-        image: registry.tkgharbor.com/okta-test/okta-flask-app:v11
+        image: registry.tkgharbor.com/okta-test/okta-python-test:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

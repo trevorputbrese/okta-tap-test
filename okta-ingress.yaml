@@ -2,7 +2,7 @@
 apiVersion: projectcontour.io/v1
 kind: HTTPProxy
 metadata:
-  name: okta-flask-test
+  name: okta-flask-test-httpproxy
 spec:
   routes:
   - services:
